@@ -1,0 +1,7 @@
+{
+  "dataset_id": "e8d30e6d-3b03-419d-8e29-b0409c1b7e91",
+  "content_hash": "02e9d00f2c0b4167a27ec9ebdfa7960b5fa8408a5be8bcccfc131a824eb18d36",
+  "schema_hash": null,
+  "version": 1,
+  "note": "Raw patient-level data is NOT included in default reproducibility packages."
+}

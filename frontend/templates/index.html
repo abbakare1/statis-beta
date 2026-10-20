@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STATIS — Scientific Statistical Analysis Platform</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <a href="#app-main" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
+
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" role="navigation" aria-label="Primary navigation">
+            <div class="sidebar-header">
+                <a href="#/dashboard" class="logo-link" aria-label="STATIS Home">
+                    <span class="logo">STATIS</span>
+                </a>
+                <p class="logo-subtitle">Scientific Statistical Analysis<br>and Research Intelligence Platform</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul class="nav-list" role="list">
+                    <li>
+                        <a href="#/dashboard" class="nav-link active" data-view="dashboard" aria-current="page">
+                            <span class="nav-icon" aria-hidden="true">◉</span>
+                            <span class="nav-label">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/results" class="nav-link" data-view="results">
+                            <span class="nav-icon" aria-hidden="true">∑</span>
+                            <span class="nav-label">Results</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/outputs" class="nav-link" data-view="outputs">
+                            <span class="nav-icon" aria-hidden="true">▤</span>
+                            <span class="nav-label">Figures & Tables</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/reports" class="nav-link" data-view="reports">
+                            <span class="nav-icon" aria-hidden="true">📄</span>
+                            <span class="nav-label">Reports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/audit" class="nav-link" data-view="audit">
+                            <span class="nav-icon" aria-hidden="true">☰</span>
+                            <span class="nav-label">Audit Ledger</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div id="nav-project" class="nav-project hidden">
+                    <div class="nav-project-label">Current Project</div>
+                    <div id="nav-project-name" class="nav-project-name"></div>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="/docs" class="nav-link nav-link-docs" target="_blank" rel="noopener" aria-label="API Documentation (opens in new tab)">
+                    <span class="nav-icon" aria-hidden="true">⚙</span>
+                    <span class="nav-label">API Docs</span>
+                </a>
+                <p class="sidebar-version">v0.2.0</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-area">
+            <header class="top-bar" role="banner">
+                <div class="top-bar-left">
+                    <h1 class="top-bar-title">Research Workspace</h1>
+                </div>
+                <div class="top-bar-right">
+                    <span class="top-bar-status" id="connection-status" role="status" aria-live="polite"></span>
+                </div>
+            </header>
+
+            <main id="app-main" class="main-content" role="main" aria-label="Main content">
+                <!-- Views render here -->
+            </main>
+        </div>
+    </div>
+
+    <!-- Notification Toasts -->
+    <div id="notifications" class="notifications" role="status" aria-live="polite" aria-atomic="false"></div>
+
+    <!-- Modal Overlay -->
+    <div id="modal-overlay" class="modal-overlay hidden" role="presentation"></div>
+
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/state.js"></script>
+    <script src="/static/js/router.js"></script>
+    <script src="/static/js/components.js"></script>
+    <script src="/static/js/views.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

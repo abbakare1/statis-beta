@@ -1,0 +1,75 @@
+{
+  "success": true,
+  "analysis_id": "8a82644e-8c9a-478d-a4be-7f52ce87124e",
+  "run_id": "f0de2374-94bc-4f57-9c4a-96edede407ea",
+  "data": {
+    "test": "OLS Linear regression",
+    "outcome": "Followup_PSS10",
+    "predictors": [
+      "Age",
+      "BMI",
+      "Baseline_PSS10",
+      "Sex_Male",
+      "Treatment_Arm_Standard Care"
+    ],
+    "n_obs": 108,
+    "r_squared": 0.495143,
+    "adj_r_squared": 0.470395,
+    "f_statistic": 20.00749,
+    "f_p_value": 0.0,
+    "aic": 666.283,
+    "bic": 682.3758,
+    "parameters": {
+      "const": {
+        "coef": -4.815348,
+        "std_err": 3.280881,
+        "t": -1.4677,
+        "p_value": 0.14526272,
+        "ci_95_lower": -11.322959,
+        "ci_95_upper": 1.692264
+      },
+      "Age": {
+        "coef": -0.007491,
+        "std_err": 0.023264,
+        "t": -0.322002,
+        "p_value": 0.74811051,
+        "ci_95_lower": -0.053635,
+        "ci_95_upper": 0.038653
+      },
+      "BMI": {
+        "coef": 0.008402,
+        "std_err": 0.042705,
+        "t": 0.196752,
+        "p_value": 0.84441319,
+        "ci_95_lower": -0.076302,
+        "ci_95_upper": 0.093107
+      },
+      "Baseline_PSS10": {
+        "coef": 0.856395,
+        "std_err": 0.103126,
+        "t": 8.304381,
+        "p_value": 0.0,
+        "ci_95_lower": 0.651846,
+        "ci_95_upper": 1.060945
+      },
+      "Sex_Male": {
+        "coef": 1.650144,
+        "std_err": 1.025441,
+        "t": 1.609205,
+        "p_value": 0.11066236,
+        "ci_95_lower": -0.383813,
+        "ci_95_upper": 3.684101
+      },
+      "Treatment_Arm_Standard Care": {
+        "coef": 5.263031,
+        "std_err": 1.001064,
+        "t": 5.257436,
+        "p_value": 8.1e-07,
+        "ci_95_lower": 3.277425,
+        "ci_95_upper": 7.248637
+      }
+    },
+    "engine": "statsmodels"
+  },
+  "warnings": []
+}

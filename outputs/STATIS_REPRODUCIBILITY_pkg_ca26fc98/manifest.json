@@ -1,0 +1,28 @@
+{
+  "statis_version": "2g",
+  "python_version": "3.14.6",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "generated_at": "2026-10-03T00:15:26.310200+00:00",
+  "dataset_id": "9c5229b1-a013-4659-a7fd-579eee0c3487",
+  "dataset_content_hash": "02e9d00f2c0b4167a27ec9ebdfa7960b5fa8408a5be8bcccfc131a824eb18d36",
+  "dataset_schema_hash": "f96a9dcfc44bbb336890c7aae837797b0c34005f875d145ff3f52f11bedf8d5f",
+  "dataset_version": 1,
+  "analysis_version_ids": [],
+  "analysis_run_ids": [],
+  "methods": [
+    "independent_t_test"
+  ],
+  "figure_ids": [],
+  "table_ids": [],
+  "report_ids": [],
+  "artifact_hashes": {},
+  "dependencies": {
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.2",
+    "lifelines": "0.30.3"
+  },
+  "random_seed": null
+}

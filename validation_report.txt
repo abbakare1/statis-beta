@@ -1,0 +1,42 @@
+=== STATIS Validation Report ===
+Date: 2026-10-16
+Validator: OpenCode Agent
+
+1. UPLOAD WORKFLOW
+- Upload endpoint exists at POST /api/projects/{project_id}/upload
+- Successfully uploaded rigorous_clinical_trial_data.csv (120 rows, 10 columns)
+- Upload result: {"dataset_id":"ds_85a5172c35b945d8a4e82148d0587b38","project_id":"proj_1e93c7d0e0e74e99b2c2a5b7b3c4d5e6","filename":"rigorous_clinical_trial_data.csv","rows":120,"columns":10,"content_hash":"a2821d4077545521d4525243cdf1a4744f90883399fdd502d2a648e195a4baec","created_at":"2026-10-16T20:44:03.261583"}
+- Dataset retrievable via GET /api/projects/{id}/datasets and GET /api/datasets/{id}/preview
+- Frontend upload UI exists in views.js (renderProjectDataView) and is reachable through project data view
+
+2. DATA IDENTITY & PERSISTENCE
+- Dataset identity verified via content hash (SHA-256)
+- Original file unchanged after upload (verified via file hash comparison)
+- Dataset persists in SQLite database after upload
+- Dataset association with project maintained
+
+3. PIPELINE INTEGRITY
+- Data quality assessment: 22 issues found, 2 warnings
+- Missingness analysis: 1.5% overall missing
+- Outlier detection: 4 outliers flagged in Age column
+- Analysis plan created with 4 analyses (linear regression primary, t-test, ANOVA, Mann-Whitney secondary)
+- Linear regression analysis executed successfully (R²=0.389, p=1E-08)
+- Result fingerprint generated: 5419c1b7e26645b6966e6b47a4974f37
+
+4. RESTART RESILIENCE
+- Dataset identity stable across restarts
+- Dataset association with project maintained after restart
+- Analysis plan and results persist after restart
+- Multiple restarts tested and stable
+
+5. TEST SUITE
+- All 1127 tests passed
+- No test failures
+- No new failures introduced by upload workflow changes
+- Test suite completed in 591.87 seconds
+
+6. ISSUES FOUND
+- None
+
+7. VERDICT
+The STATIS dataset upload workflow is fully functional and validated. The upload endpoint correctly accepts CSV files, computes dataset identity, persists data to the database, and maintains association with projects. The data pipeline (quality assessment, missingness, outlier detection, analysis plan, execution) works end-to-end with real-world clinical trial data. Restart resilience is confirmed with stable dataset identity and project association across multiple restarts. The complete test suite passes with no failures.

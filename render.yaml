@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: statis-beta
+    env: docker
+    buildCommand: docker build -t statis .
+    startCommand: docker run -p 8420:8420 statis
+    healthCheckPath: /
+    envVars:
+      - key: STATIS_HOST
+        value: 0.0.0.0
+      - key: STATIS_PORT
+        value: "8420"
+      - key: STATIS_DEBUG
+        value: "false"
+      - key: STATIS_JWT_SECRET
+        generateValue: true
+      - key: STATIS_OLLAMA_BASE_URL
+        value: http://localhost:11434
+      - key: STATIS_OLLAMA_MODEL
+        value: qwen2.5-coder:7b

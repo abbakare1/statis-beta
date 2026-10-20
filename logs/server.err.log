@@ -1,0 +1,5 @@
+INFO:     Started server process [19736]
+INFO:     Waiting for application startup.
+2026-10-07 20:42:07.050 | INFO     | app.api.main:lifespan:44 - STATIS database initialized
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8420 (Press CTRL+C to quit)

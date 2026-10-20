@@ -1,0 +1,16 @@
+[
+  {
+    "method_id": "independent_t_test",
+    "statistics": {
+      "t_statistic": 2.5,
+      "p_value": 0.014
+    },
+    "effect_size": {
+      "cohens_d": 0.45
+    },
+    "n": {
+      "group1": 30,
+      "group2": 30
+    }
+  }
+]

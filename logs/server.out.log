@@ -1,0 +1,58 @@
+Starting STATIS on http://127.0.0.1:8420
+Ollama: http://localhost:11434 (qwen2.5-coder:7b)
+INFO:     127.0.0.1:51029 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     Started server process [30516]
+INFO:     Waiting for application startup.
+2026-10-08 21:59:44.580 | INFO     | app.api.main:lifespan:44 - STATIS database initialized
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8420 (Press CTRL+C to quit)
+Starting STATIS on http://127.0.0.1:8420
+Ollama: http://localhost:11434 (qwen2.5-coder:7b)
+INFO:     127.0.0.1:49695 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57690 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57690 - "POST /api/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57690 - "POST /api/projects/0ef24909-0bb4-4730-85bb-cf3a367fb3b7/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57690 - "GET /api/projects/0ef24909-0bb4-4730-85bb-cf3a367fb3b7/datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57690 - "GET /api/datasets/c5d68b41-c17d-4ea3-ac95-47f8252bc55a/preview?head=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57690 - "GET /api/projects/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57690 - "GET /api/projects/0ef24909-0bb4-4730-85bb-cf3a367fb3b7/workflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64734 - "GET /api/datasets/c5d68b41-c17d-4ea3-ac95-47f8252bc55a/preview?head=1 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64734 - "POST /api/data-quality/c5d68b41-c17d-4ea3-ac95-47f8252bc55a/assess HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64734 - "GET /api/data-quality/c5d68b41-c17d-4ea3-ac95-47f8252bc55a HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64734 - "GET /api/data-quality/c5d68b41-c17d-4ea3-ac95-47f8252bc55a/missingness HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64734 - "GET /api/data-quality/c5d68b41-c17d-4ea3-ac95-47f8252bc55a/outliers HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64734 - "GET /api/projects/0ef24909-0bb4-4730-85bb-cf3a367fb3b7/quality-profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64734 - "GET /api/projects/0ef24909-0bb4-4730-85bb-cf3a367fb3b7/variable-roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64734 - "POST /api/analysis-plan/create HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:64734 - "GET /api/projects/0ef24909-0bb4-4730-85bb-cf3a367fb3b7/plans HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64734 - "GET /api/projects/0ef24909-0bb4-4730-85bb-cf3a367fb3b7/workflow HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64734 - "GET /api/audit?limit=25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET /api/projects/0ef24909-0bb4-4730-85bb-cf3a367fb3b7/quality-profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET /api/projects/0ef24909-0bb4-4730-85bb-cf3a367fb3b7/variable-roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET /api/projects/0ef24909-0bb4-4730-85bb-cf3a367fb3b7/plans HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET /api/projects/0ef24909-0bb4-4730-85bb-cf3a367fb3b7/workflow HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53192 - "GET /api/data-quality/c5d68b41-c17d-4ea3-ac95-47f8252bc55a/missingness HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53192 - "GET /api/data-quality/c5d68b41-c17d-4ea3-ac95-47f8252bc55a/outliers HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57831 - "GET /api/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57789 - "GET /api/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57789 - "GET /api/audit?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "POST /api/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "POST /api/projects/0a91b846-85ba-4a78-ab82-0a2f91649a9d/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "GET /api/projects/0a91b846-85ba-4a78-ab82-0a2f91649a9d/datasets HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "GET /api/datasets/295e1235-d8c2-46da-ac8c-a3a82cde3091/preview?head=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "GET /api/projects/0a91b846-85ba-4a78-ab82-0a2f91649a9d/workflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "POST /api/data-quality/295e1235-d8c2-46da-ac8c-a3a82cde3091/assess HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "GET /api/data-quality/295e1235-d8c2-46da-ac8c-a3a82cde3091 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "GET /api/data-quality/295e1235-d8c2-46da-ac8c-a3a82cde3091/missingness HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "GET /api/data-quality/295e1235-d8c2-46da-ac8c-a3a82cde3091/outliers HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "GET /api/projects/0a91b846-85ba-4a78-ab82-0a2f91649a9d/quality-profile HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "GET /api/projects/0a91b846-85ba-4a78-ab82-0a2f91649a9d/variable-roles HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "POST /api/analysis-plan/create HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:53052 - "GET /api/projects/0a91b846-85ba-4a78-ab82-0a2f91649a9d/plans HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "GET /api/projects/0a91b846-85ba-4a78-ab82-0a2f91649a9d/workflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "GET /api/audit?limit=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54266 - "POST /api/analysis-plan/create HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:54266 - "GET /api/projects/0a91b846-85ba-4a78-ab82-0a2f91649a9d/plans HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54266 - "GET /api/projects/0a91b846-85ba-4a78-ab82-0a2f91649a9d/workflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54266 - "GET /api/projects/0a91b846-85ba-4a78-ab82-0a2f91649a9d/variable-roles HTTP/1.1" 200 OK

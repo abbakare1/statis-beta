@@ -1,0 +1,53 @@
+# STATIS - Scientific Statistical Analysis and Research Intelligence Platform
+# Python dependencies
+
+# Web framework
+fastapi==0.115.12
+uvicorn[standard]==0.35.0
+python-multipart==0.0.20
+jinja2==3.1.6
+aiofiles==24.1.0
+
+# Data science core
+numpy>=2.2.0
+pandas>=2.3.0
+scipy>=1.16.0
+statsmodels>=0.14.0
+scikit-learn>=1.7.0
+
+# Statistical packages
+pingouin==0.5.5
+lifelines==0.30.0
+patsy==1.0.1
+
+# Data I/O
+openpyxl==3.1.5
+xlrd==2.0.1
+pyarrow>=20.0.0
+
+# Visualization
+matplotlib>=3.10.0
+seaborn>=0.13.0
+plotly>=6.1.0
+
+# Database
+sqlalchemy>=2.0.0
+aiosqlite>=0.21.0
+
+# Utilities
+pydantic>=2.10.0
+pydantic-settings>=2.9.0
+httpx==0.28.1
+python-dateutil>=2.9.0
+hashlib-additional>=1.0.0
+rich==14.0.0
+loguru==0.7.3
+
+# Testing
+pytest>=9.0.0
+pytest-asyncio>=0.26.0
+pytest-cov>=6.0.0
+
+# Report generation
+weasyprint>=65.0
+markdown>=3.8
