@@ -19,11 +19,11 @@ RUN mkdir -p database data/uploads data/working outputs logs memory
 
 # Set environment variables
 ENV STATIS_HOST=0.0.0.0
-ENV STATIS_PORT=8420
+ENV STATIS_PORT=8000
 ENV STATIS_DEBUG=false
 
 # Expose port
-EXPOSE 8420
+EXPOSE 8000
 
 # Run the application
-CMD ["uvicorn", "app.api.main:app", "--host", "0.0.0.0", "--port", "8420"]
+CMD ["uvicorn", "app.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
